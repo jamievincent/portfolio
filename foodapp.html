@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class='nav' id='myNav'>
+		<a href='index.html' class='active'>Home</a>
+		<a href="about.html">About Me</a>
+	  	<a href="contact.html">Contact</a>
+	  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  		<i class="fa fa-bars"></i>
+	  	</a>
+	</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myNav");
+	  if (x.className === "nav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "nav";
+	  }
+	}
+	</script>
+
+</head>
+
+<body>
+
+	<div class='header'> 
+		<h1>Food Delivery App Analysis</h1>
+		<p>An analysis of the UX of food delivery apps.</p>
+	</div>
+
+	<div class='content' style="margin-left: 70px; margin-right: 70px;">
+		<div class='row'>
+			<div class='column'>
+				<h3>BRIEF:</h3><p> Conduct a critical study of Graphical User Interface (GUI) designs and how a user's interaction with them results in a user experience, in relation to two food delivery apps.<p>
+			</div>
+			<div class='column' style="text-align: right;">
+				<h4 style="font-weight: normal;">16 March 2020<br>UNSW UX Design</h4>
+			</div>
+		</div>
+
+		<div class="text">
+
+			<h3>USER JOURNEY</h3>
+
+			<img id="myImg" onclick="showmodal('myImg')" src='img/foodapp/userjourney.png' class="left"/> <br>
+
+			<h3>TASK 1: Finding a Restaurant</h3>
+			<h3>Doordash:</h3><p> There are many filters, but to change them you have to scroll back up the page. The only dietary filter was vegetarian which is limiting. The images of the restaurants are inconsistent, with some restaurants not having an image at all. This means that users overlook some restaurants. The user can only select 1 food cuisine at a time. In one situation, the user wanted to eat either Thai or Chinese but since the app only allowed one cuisine choice, the user had to look through each one separately. The search page provides a list of cuisines as a prompt and the search bar is quick and responsive. <p> <br>
+
+			<img id="myImg1" onclick="showmodal('myImg1')" src='img/foodapp/doordash1.png' class="left"/>
+
+			<h3>Deliveroo:</h3><p> The filters and search bar are displayed on the home page, and the bar remains at the top of the page as you scroll making it easier to change filters. There are a larger selection of dietary filters. However, it doesn’t allow you to filter based on price. The search bar is not responsive as you type and is slow to load. The restaurant images are more consistent and high quality. The estimated delivery times are clearly highlighted on the restaurant summary, however there is no indication of pricing.<p> <br>
+
+			<img id="myImg2" onclick="showmodal('myImg2')" src='img/foodapp/deliveroo1.png' class="left"/>
+
+			<h3>TASK 2: Selecting Menu Items</h3>
+			<h3>Doordash:</h3><p> There is no way to filter the menu based on allergies or dietary needs, even if the vegetarian filter is selected on the home screen. Users need to read through the whole description of each menu item but not all ingredients are included and some menus have no descriptions at all. Not all items include photos, which means that the user scrolls right past them. Users were less likely to select an item without a photo because its not clear what you will be ordering. The menu is laid out in different sections, so the user has to constantly go back and forth between pages. <p> <br>
+
+			<img id="myImg3" onclick="showmodal('myImg3')" src='img/foodapp/doordash2.png' class="left"/>
+
+			<h3>Deliveroo:</h3><p> The app provides a search bar at the top of the menu which allows people to search for what they want. However, it only searches the titles of items and not the descriptions. Similarly to Doordash, you are unable to filter based on dietary requirements and images are inconsistent. The layout of this menu is slightly better because  the user can scroll through the sections of the menu or select a section from the top bar without having to go back and forth.<p> <br>
+			
+			<img id="myImg4" onclick="showmodal('myImg4')" src='img/foodapp/deliveroo2.png' class="left"/>
+
+			
+
+		<div class="text">
+			<h3>PERSONAS</h3> 
+			<p>Taylor is a 22 year old law student. He is busy and doesn’t have time to cook. He is vegetarian with allergies, so it's hard for him to find food he can eat. Taylor finds the apps easy to use. Neither app caters for his dietary needs and he often has to call the restaurant. Deliveroo makes this search slightly easier with more filters, but he still needs to read through each item on the menu. He liked how Doordash filters and displays prices. However, he prefers how Deliveroo displays the total cost of the order.</p> <br>
+
+			<img id="myImg5" onclick="showmodal('myImg5')" src='img/foodapp/taylor.png' class="left"/><br>
+
+			<p>Joanna is a 65 year old retired teacher. She lives in Mosman with her husband, Steve. She enjoys ordering new foods and eating it in the comfort of her home. However, she is not comfortable with technology and gets frustrated when she can’t work out what to do. Joanna found both apps difficult to use as she hasn’t used apps like this before. She likes the way both apps clearly display and filter based on the restaurant’s ratings. She also likes the suggested restaurant section, because it saves her a lot of time and effort.</p> <br>
+
+			<img id="myImg6" onclick="showmodal('myImg6')" src='img/foodapp/joanna.png' class="left"/>
+
+			<br>
+
+			<h3>NIELSEN'S HEURISTICS</h3>
+			<h3>Visibility of System Status:</h3><p>After adding items to the order, both apps have coloured buttons at the bottom of the screen to view the order. Doordash displays the quantity of items and the restaurant, but doesn’t display the price which is less appealing for someone on a tight budget. Deliveroo displays the total cost and quantity of the order but doesn't say which restaurant. These buttons allow the user to view the status of their order as they search for more items to add. <p> 
+
+			<img id="myImg7" onclick="showmodal('myImg7')" src='img/foodapp/visibility.png' class="left"/> <br> 
+
+
+			<h3>Error Prevention:</h3><p> Some items on the menu give the user options to choose from. Doordash uses radio buttons which imply that only 1 choice can be made. The buttons on Deliveroo are not as obvious and it is less clear how many options can be chosen. Neither app will allow the user to proceed without making a selection. <p>
+
+			<img id="myImg8" onclick="showmodal('myImg8')" src='img/foodapp/error.png' class="left"/> <br> 
+
+			<h3>Mental Model:</h3><p> Both apps have a very similar base layout and use similar interactive aspects. Both use a map interface on the home page allowing the user to explore the restaurant options and a path interface guiding the user towards a purchase. Metaphors such as “cart”, “basket” and “checkout” reference a physical Point of Sale and allows the user to understand the digital process. <p> 
+
+			<img id="myImg9" onclick="showmodal('myImg9')" src='img/foodapp/mental.png' class="left"/> <br>
+					
+			
+	</div>
+
+	<!-- The Modal -->
+				<div id="myModal" class="modal">
+				  <span class="close">&times;</span>
+				  <img class="modal-content" id="img01">
+				</div>
+		
+
+	</div>
+
+	<button onclick="topFunction()" id="upBtn" title="Go to top"><img src="img/up.png" width="30px" /></button>
+
+	<script>
+		//Get the button:
+		mybutton = document.getElementById("upBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		function showmodal(id){
+		  var img = document.getElementById(id);
+		  modal.style.display = "block";
+		  modalImg.src = img.src;
+		  captionText.innerHTML = img.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+	</script>
+
+</body>
+
+</html>

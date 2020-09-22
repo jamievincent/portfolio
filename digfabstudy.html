@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class='nav' id='myNav'>
+		<a href='index.html' class='active'>Home</a>
+		<a href="about.html">About Me</a>
+	  	<a href="contact.html">Contact</a>
+	  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  		<i class="fa fa-bars"></i>
+	  	</a>
+	</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myNav");
+	  if (x.className === "nav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "nav";
+	  }
+	}
+	</script>
+
+</head>
+
+<body>
+
+	<div class='header'> 
+		<h1>Digital Fabrication Study</h1>
+		<p>Research on analogue and digital fabrication utilising computational design methodology</p>
+	</div>
+
+	<div class='content' style="margin-left: 70px; margin-right: 70px;">
+		<div class='row'>
+			<div class='column'>
+				<h3>BRIEF:</h3><p> Explore the notion of "Digital Craft" and the relationship between digital and analogue methods of designing and making. Present in an illustrated catalogue essay form.<p>
+			</div>
+			<div class='column' style="text-align: right;">
+				<h4 style="font-weight: normal;">29 April 2019<br>UNSW Computational Design Theory 3</h4>
+			</div>
+		</div>
+		<br>
+
+		<div class="centerbut">
+			<a href='ass3.pdf' target="_blank"> <button class="button"> View PDF Essay </button> </a>
+		</div> <br>
+
+		<div class="row">
+			<div class="column">
+			</div>
+			<div class="column">
+				<img id="myImg1" onclick="showmodal('myImg1')" src='img/digfabstudy/1.jpg' class="pgs"/> <br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img id="myImg2" onclick="showmodal('myImg2')" src='img/digfabstudy/2.jpg' class="pgs"/> <br>
+			</div>
+			<div class="column">
+				<img id="myImg3" onclick="showmodal('myImg3')" src='img/digfabstudy/3.jpg' class="pgs"/> <br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img id="myImg4" onclick="showmodal('myImg4')" src='img/digfabstudy/4.jpg' class="pgs"/> <br>
+			</div>
+			<div class="column">
+				<img id="myImg5" onclick="showmodal('myImg5')" src='img/digfabstudy/5.jpg' class="pgs"/> <br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img id="myImg6" onclick="showmodal('myImg6')" src='img/digfabstudy/6.jpg' class="pgs"/> <br>
+			</div>
+			<div class="column">
+				<img id="myImg7" onclick="showmodal('myImg7')" src='img/digfabstudy/7.jpg' class="pgs"/> <br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img id="myImg8" onclick="showmodal('myImg8')" src='img/digfabstudy/8.jpg' class="pgs"/> <br>
+			</div>
+			<div class="column">
+				<img id="myImg9" onclick="showmodal('myImg9')" src='img/digfabstudy/9.jpg' class="pgs"/> <br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img id="myImg10" onclick="showmodal('myImg10')" src='img/digfabstudy/10.jpg' class="pgs"/> <br>
+			</div>
+			<div class="column">
+				<img id="myImg11" onclick="showmodal('myImg11')" src='img/digfabstudy/11.jpg' class="pgs"/> <br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img id="myImg12" onclick="showmodal('myImg12')" src='img/digfabstudy/12.jpg' class="pgs"/> <br>
+			</div>
+			<div class="column">
+				<img id="myImg13" onclick="showmodal('myImg13')" src='img/digfabstudy/13.jpg' class="pgs"/> <br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img id="myImg12" onclick="showmodal('myImg12')" src='img/digfabstudy/14.jpg' class="pgs"/> <br>
+			</div>
+			<div class="column">
+			
+			</div>
+		</div>
+
+
+		
+		
+		
+					
+			
+	</div>
+
+	<!-- The Modal -->
+				<div id="myModal" class="modal">
+				  <span class="close">&times;</span>
+				  <img class="modal-content" id="img01">
+				</div>
+		
+
+	</div>
+
+	<button onclick="topFunction()" id="upBtn" title="Go to top"><img src="img/up.png" width="30px" /></button>
+
+	<script>
+		//Get the button:
+		mybutton = document.getElementById("upBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		function showmodal(id){
+		  var img = document.getElementById(id);
+		  modal.style.display = "block";
+		  modalImg.src = img.src;
+		  captionText.innerHTML = img.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+	</script>
+
+</body>
+
+</html>

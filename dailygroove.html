@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class='nav' id='myNav'>
+		<a href='index.html' class='active'>Home</a>
+		<a href="about.html">About Me</a>
+	  	<a href="contact.html">Contact</a>
+	  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  		<i class="fa fa-bars"></i>
+	  	</a>
+	</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myNav");
+	  if (x.className === "nav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "nav";
+	  }
+	}
+	</script> 
+
+</head>
+
+<body>
+
+	<div class='header'> 
+		<h1>The Daily Groove</h1>
+		<p>UX analysis and design of dance class viewing apps.</p>
+	</div>
+
+	<div class='content' style="margin-left: 70px; margin-right: 70px;">
+		<div class='row'>
+			<div class='column'>
+				<h3>BRIEF:</h3><p> Research and come up with a solution to a problem which you are passionate about<p>
+			</div>
+			<div class='column' style="text-align: right;">
+				<h4 style="font-weight: normal;">10 June 2020<br>General Assembly UX Design</h4>
+			</div>
+		</div>
+
+		<div class="text">
+
+			<h3>THE PROBLEM</h3>
+			<p> I decided to explore the issues within the dance community. From my personal experience I know that dance classes are very expensive, costing around $20-$100 per class. There is also a judgemental and elitist atmosphere within these classes, especially for beginners. Classes are also inaccessible and difficult to find for some users with varying dance experience and dance styles. </p> <br>
+			<!-- <img src='img/dailygroove/problem.png' class="left" /> <br> --->
+
+			<h3>RESEARCH GOALS</h3>
+			<p>The main research goals include:
+				<ul>
+					<li>Evaluate the <b>current habits</b> and needs of potential users</li>
+					<li>Determine the <b>major pain points</b> of existing online classes</li>
+					<li>Identify the major <b>competitiors</b> and their main <b>features</b></li>
+				</ul>
+			</p> <br>
+
+			<!-- <img src='img/dailygroove/researchgoals.png' class="left" /> <br> -->
+
+			<h3>RESEARCH HIGHLIGHTS</h3> <br>
+
+			<p style="font-style: italic;"> "For classes I am familiar with, I prefer to go in because it is more of a community. But when I am learning new styles I like following along in my own space at my own pace" - Emily, 23 F </p> <br>
+
+			<p>It was also found that:
+				<ul>
+					<li>There is a <b>lack of social interaction</b> in current online classes</li>
+					<li><b>Experienced</b> dancers generally preferred <b>in person</b> classes</li>
+					<li><b>Beginners</b> preferred <b>online</b> classes so that they could move at their own pace</li>
+					<li>Existing apps <b>lack variety</b> in dance styles and have a <b>low volume</b> of videos</li>
+				</ul>
+			</p> <br>
+
+			<!-- <img src='img/dailygroove/highlights.png' class="left"/> <br> -->
+
+		<div class='row'>
+			<div class='column'>
+				<h3>PROBLEM STATEMENT:</h3><p> Dancers need a way to discover and access classes to maintain social and physical health<p>
+			</div>
+			<div class='column'>
+				<h3>HYPOTHESIS:</h3><p> We believe that by creating a platform where dancers can share and view dance classes, we will create a more inclusive dance community.<p>
+			</div>
+		</div>
+
+		<div class="text">
+			<h3>PERSONA</h3> <br>
+			<img id="myImg" onclick="showmodal('myImg')" src='img/dailygroove/persona.png' class="left"/> 
+
+			<br>
+
+			<h3>USER FLOWS</h3>
+			<h4 style="font-weight: normal;">The log in and sign up process:</h4>
+			<img id="myImg1" onclick="showmodal('myImg1')" src='img/dailygroove/userflow1.png' class="left" /> 
+
+
+			<br>
+			<h4 style="font-weight: normal;">Applying filters to a search:</h4>
+			<img id="myImg2" onclick="showmodal('myImg2')" src='img/dailygroove/userflow2.png' class="left" /> 
+
+
+			<br> <br>
+
+			<h3>SITE MAP</h3> <br>
+			<img id="myImg3" onclick="showmodal('myImg3')" src='img/dailygroove/sitemap.png' class="left" /> <br>
+
+			<h3>FEATURE PRIORITISATION</h3>
+			<p>This is the prioritisation of features for the development of the Minimal Viable Product. The user profile and social media features to address the main issues with social interaction as highlighted in my user research. Search filters and dance preferences help users discover relevant content to make classes more accessible. The remaining features are important, but not necessary for the MVP.</p> <br>
+			<img id="myImg4" onclick="showmodal('myImg4')" src='img/dailygroove/features.png' class="left" /> <br>
+
+			<h3>INITIAL SCREEN DESIGN</h3>
+			<p> The first step in my design was developing the navigation system. For mobile apps the navigation will be outlined within a hamburger menu as this is an intuitive icon for many users. On larger screens the menu items will be displayed across the top of the screen in a navigation bar. </p> <br>
+			<img id="myImg5" onclick="showmodal('myImg5')" src='img/dailygroove/initial.png' class="left" /> <br>
+
+			<h3>FIRST PROTOTYPE</h3> <br>
+			<img id="myImg6" onclick="showmodal('myImg6')" src='img/dailygroove/prototype1pg1.png' class="left" />
+			<img id="myImg7" onclick="showmodal('myImg7')" src='img/dailygroove/prototype1pg2.png' class="left" />
+			<img id="myImg8" onclick="showmodal('myImg8')" src='img/dailygroove/prototype1pg3.png' class="left" /> <br>
+
+			<h3>USER FEEDBACK</h3>
+		</div>
+
+		<div class='row'>
+			<div class='column'>
+				<p>Log in and Sign up Process:
+					<ul>
+						<li>"Next and "Skip" buttons were hard to differentiate</li>
+						<li>"Back" button was looked over</li>
+						<li>Social media buttons were clunky</li>
+						<li>Users preferred to log in with social media because it is quicker</li>
+					</ul>
+				</p>
+			</div>
+			<div class='column'>
+				<p>Searching and Filtering Process:
+					<ul>
+						<li>The "Filter" button was overlooked</li>
+						<li>The search bar was not noticed by older users because the text was too light</li>
+						<li>Users wanted a sorting option to sort search results</li>
+						<li>Most users selected the search bar before the "Filter" button</li>
+					</ul>
+				</p>
+
+			</div>
+		</div>
+			
+		<!--<img src='img/dailygroove/feedback.png' class="left" /> <br> -->
+
+		<div class="text">
+			
+			<h3>FINAL PROTOTYPE</h3> <br>
+			<img id="myImg9" onclick="showmodal('myImg9')" src='img/dailygroove/prototype2pg1.png' class="left" />
+			<img id="myImg10" onclick="showmodal('myImg10')"src='img/dailygroove/prototype2pg2.png' class="left" />
+			<img id="myImg11" onclick="showmodal('myImg11')" src='img/dailygroove/prototype2pg3.png' class="left" />
+			<img id="myImg12" onclick="showmodal('myImg12')" src='img/dailygroove/prototype2pg4.png' class="left" /> <br>
+		</div>		
+			
+			<div class="centerbut">
+				<a href='https://xd.adobe.com/view/e458235f-9404-42ea-735e-cf5c3a26aee9-9269/screen/249c57ee-6b45-4d36-9792-90beca622b30?fullscreen' target="_blank"> <button class="button"> View Interactive Prototype </button> </a>
+			</div>
+
+		<div class="text">
+
+			<h3>RESPONSIVE DESIGN</h3> <br>
+			<p>The ideal layout for my design would be on laptop due to the nature of the app. Laptop would be easier to view and follow classes. However, the design is responsive to various breakpoints as you can see below.</p> <br>
+			<img id="myImg13" onclick="showmodal('myImg13')" src='img/dailygroove/responsive.png' class="left" />
+		</div>
+	</div>
+
+	<!-- The Modal -->
+				<div id="myModal" class="modal">
+				  <span class="close">&times;</span>
+				  <img class="modal-content" id="img01">
+				</div>
+		
+
+	</div>
+
+	<button onclick="topFunction()" id="upBtn" title="Go to top"><img src="img/up.png" width="30px" /></button>
+
+	<script>
+		//Get the button:
+		mybutton = document.getElementById("upBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		function showmodal(id){
+		  var img = document.getElementById(id);
+		  modal.style.display = "block";
+		  modalImg.src = img.src;
+		  captionText.innerHTML = img.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class='nav' id='myNav'>
+		<a href='index.html' class='active'>Home</a>
+		<a href="about.html">About Me</a>
+	  	<a href="contact.html">Contact</a>
+	  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  		<i class="fa fa-bars"></i>
+	  	</a>
+	</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myNav");
+	  if (x.className === "nav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "nav";
+	  }
+	}
+	</script>
+
+</head>
+
+<body>
+
+	<div class='header'> 
+		<h1>Hi I'm Jamie</h1>
+		<p>Scroll down to see some of my work</p>
+	</div>
+
+	<div class='content'>
+
+		<div class='cards'>
+			<div class="card">
+				<a href="ux.html">
+					<img src='img/covers/podbloggercover.png' width="500"/>
+				</a>
+				<h1>UX Design</h1>
+			</div>
+			<div class="card">
+				<a href="comp.html">
+					<img src='img/covers/compcover.png' width="500"/>
+				</a>
+				<h1>Computational Design</h1>
+			</div>
+			<div class="card">
+				<a href="drawings.html">
+					<img src='img/covers/drawingcover.png'/>
+				</a>
+				<h1>Digital Drawings</h1>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

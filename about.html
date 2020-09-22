@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class='nav' id='myNav'>
+		<a href='index.html'>Home</a>
+		<a href="about.html" class='active'>About Me</a>
+	  	<a href="contact.html">Contact</a>
+	  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  		<i class="fa fa-bars"></i>
+	  	</a>
+	</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myNav");
+	  if (x.className === "nav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "nav";
+	  }
+	}
+	</script>
+
+</head>
+
+<body>
+
+	<div class='header'> 
+		<h1>About Me</h1>
+	</div>
+
+	<div class='content' style="margin-left: 70px; margin-right: 70px;">
+		<div class="row">
+			<div class="leftcol">
+				<img src="img/me.jpg" class="center" style="margin-top: 16px;">
+			</div>
+			<div class="rightcol">
+				<p>I am a Computational Design and UI/UX student based in Sydney. I have a passion for creating beautifully designed and usable digital experiences. I am seeking a UI/UX role with a progressive and growing organisation that values innovation, design, customer experience and sustainability. <br> <br> I am comfortable using a range of tools including AdobeXD, InVision, Indesign, Photoshop, Grasshopper and Rhino. I am also familiar with Python, HTML, CSS and JavaScript. </p>
+				<br> <br>
+			</div>
+		</div>
+			
+
+		<div class="text">
+			<h3>EDUCATION</h3>
+			<p>I am currently in my final year studying a Bachelor of Computational Design at The University of New South Wales. Within this course I have learnt a lot in a variety of design disciplines such as Architecture, Smart Cities, Digital Fabrication, Building Optimisation, User Experience Design and Sustainable design. In my first year, I received the Dean's Merit List Award for achieving a WAM of over 80. <br> <br>In June 2020, I completed a 10 week course on User Experience Design with General Assembly. This course developed my skills in UX/UI with career focused processes and methods. You can click on the button below to view my final project, "The Daily Groove". </p>
+			<br>
+
+			<div class="centerbut">
+				<a href='dailygroove.html'> <button class="button"> The Daily Groove</button> </a>
+			</div>
+			<br> <br>
+			<h3>WORK EXPERIENCE</h3>
+			<p>I am currently working as an Administrative Assistant at The Good Guys. My duties include, serving customers, arranging deliveries, dealing with money and responding to customer inquiries and issues via phone and email. This job has taught me critical skills in communication, organisation, attention to detail and multi-tasking. <br><br> In 2019, as a part of my university degree, I completed a 10 week professional placement at Archistar. This placement developed my technical skills using javascript, html, css, Grasshopper and Rhino. It also developed my workplace skills such as team work, communication with supervisors and team mates, working with deadlines and workflows.</p>
+
+		</div>
+		<button onclick="topFunction()" id="upBtn" title="Go to top"><img src="img/up.png" width="30px" /></button>
+
+		<script>
+			//Get the button:
+			mybutton = document.getElementById("upBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0; // For Safari
+			  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}
+		</script>
+	</div>
+</body>

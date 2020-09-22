@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class='nav' id='myNav'>
+		<a href='index.html' class='active'>Home</a>
+		<a href="about.html">About Me</a>
+	  	<a href="contact.html">Contact</a>
+	  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  		<i class="fa fa-bars"></i>
+	  	</a>
+	</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myNav");
+	  if (x.className === "nav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "nav";
+	  }
+	}
+	</script>
+
+</head>
+
+<body>
+
+	<div class='header'> 
+		<h1>PodBlogger</h1>
+		<p>UX analysis and redesign of podcast listening apps.</p>
+	</div>
+
+	<div class='content' style="margin-left: 70px; margin-right: 70px;">
+		<div class='row'>
+			<div class='column'>
+				<h3>BRIEF:</h3><p> Research and design a new social media service which is focused on people sharing spoken word audio recordings (podcasts).<p>
+			</div>
+			<div class='column' style="text-align: right;">
+				<h4 style="font-weight: normal;">29 April 2020<br>UNSW UX Design</h4>
+			</div>
+		</div>
+
+		<div class="text">
+
+			<h3>USER RESEARCH</h3>
+			<p> I started by interviewing a number of people about their current podcast listening habits and frustrations. The most used podcast app was Apple Podcasts, even though users were often frustrated with its functionality. I discovered that the exploration of new content is a major pain point, with many users using external apps to find new podcasts. In relation to this, interviewees stated that they would like to see features which allow reviewing, filtering and suggested content. </p> <br>
+
+			<h3>COMPARITIVE ANALYSIS</h3>
+			<h3>Filtering podcasts:</h3><p> In current podcast apps there is no capability to filter searches. For example in the Apple Podcast app, the only input the user has in searching is the search text. This is limiting as the user has to scroll through endless podcasts to discover new content. A non podcast app that handles this task well is ASOS. Users are able to sort and filter through search results . A large number of filtering criteria is provided. Recent searches are saved to increase ease of use. <p> <br>
+
+			<img id="myImg" onclick="showmodal('myImg')" src='img/podblogger/filtercomp.jpg' class="left"/> 
+
+			<h3>Reviewing podcasts:</h3><p> Current apps have some functionality in rating and reviewing podcasts. Apple podcasts allow users to leave a written or numerical rating. But podcasts cannot be sorted according to these. The Depop app has both forms of review, yet like apple, you cannot filter based on these reviews. <p> <br>
+			
+			<img id="myImg1" onclick="showmodal('myImg1')" src='img/podblogger/reviewcomp.jpg' class="left"/>
+		
+
+		<div class="text">
+			<h3>PERSONAS</h3> <br>
+			<img id="myImg2" onclick="showmodal('myImg2')" src='img/podblogger/freya.png' class="left"/> <br>
+			<img id="myImg3" onclick="showmodal('myImg3')" src='img/podblogger/steve.png' class="left"/> 
+
+			<br>
+
+			<h3>USER FLOWS</h3>
+			<h3>Filtering podcasts:</h3><p> When filtering a search, the user opens the Podblogger app and navigates to the search page. Then the user can select a category, enter text into the search bar or select the filter icon. On the filter page, the user selects filters such as time and rating then searches. The user scrolls through the page and selects a podcast to listen to. <p> <br> 
+
+			<img id="myImg4" onclick="showmodal('myImg4')" src='img/podblogger/filterflow.png' class="left"/> 
+			<img id="myImg5" onclick="showmodal('myImg5')" src='img/podblogger/filter1.jpg' class="left"/> <br>
+
+			<h3>Reviewing podcasts:</h3><p> When leaving a review, the user opens the app and selects a podcast show. Then they can select the rate button or select a specific episode. Once selecting a specific episode, they can listen to the podcast first or rate the podcast. On the rating page the user rates the podcast on a variety of criteria. The user submits the rating and can return to the previous page. <p> <br> 
+			<img id="myImg6" onclick="showmodal('myImg6')" src='img/podblogger/reviewflow.png' class="left"/>
+			<img id="myImg7" onclick="showmodal('myImg7')" src='img/podblogger/review1.jpg' class="left"/>
+
+			<br> <br>
+
+			<h3>ANALYSIS</h3> <br>
+			<p> The circular layout allows the user to view podcasts without scrolling endlessly. Some buttons on the screens have a clearer affordance such as the "Submit" button on the review page. Yet the rating button on the play page is less obvious as it is plain text. The filter page is cluttered with irrelevant data, which does not follow aesthetic and minimalist design. There is no way to view recent searches, which requires recall rather than recognition. <p> <br>
+
+			<img id="myImg8" onclick="showmodal('myImg8')" src='img/podblogger/analysis1.jpg' class="left"/>
+
+
+
+			<h3>USER TESTING</h3>
+			<p>Through user testing, the main areas of improvement were: The location of the search navigation icon - users didn't expect the icon to be the first option on the right, criteria for the ratings was confusing and unnecessary, buttons were too small and not easily clickable, ability to leave a written review..</p> <br>
+
+
+			<h3>USER FLOWS ITERATION 2</h3>
+			<h3>Filtering podcasts:</h3><p>For the filtering user flow, the main changes made were: moving the search navigation to the second option on the right, hiding the filtering options within dropdown menus, and saving the users recent searches. <p> <br> 
+
+			<img id="myImg9" onclick="showmodal('myImg9')" src='img/podblogger/filter2.1.jpg' class="left"/>
+			<img id="myImg9" onclick="showmodal('myImg9')" src='img/podblogger/filter2.2.jpg' class="left"/>
+
+			<h3>Reviewing podcasts:</h3><p>For the review functionality, the main changes made were: the option to leave a written review or just numerical and a separate reviews page where the user can view reviews made by other users. <p> <br>
+
+			<img id="myImg10" onclick="showmodal('myImg10')" src='img/podblogger/review2.jpg' class="left"/> 
+
+			<h3>ANALYSIS ITERATION 2</h3>
+			<p>Important buttons are now larger and clearer which reduces confusion for the user. When writing the reviews, placeholder text indicates what to write in each box. The size indicates the expected amount of text to be written. The filter page is now less cluttered with filters hidden away in drop down menus. The user can now view their recent searches when clicking on the search bar.<p> <br>
+
+			<img id="myImg11" onclick="showmodal('myImg11')" src='img/podblogger/analysis2.jpg' class="left"/> 
+
+			
+			
+			<div class="centerbut">
+				<a href='https://xd.adobe.com/view/8932cc08-f406-4db8-4dea-b78e5c3b7bea-ff03/?fullscreen' target="_blank"> <button class="button"> View Interactive Prototype </button> </a>
+			</div>
+	</div>
+
+	<!-- The Modal -->
+				<div id="myModal" class="modal">
+				  <span class="close">&times;</span>
+				  <img class="modal-content" id="img01">
+				</div>
+		
+
+	</div>
+
+	<button onclick="topFunction()" id="upBtn" title="Go to top"><img src="img/up.png" width="30px" /></button>
+
+	<script>
+		//Get the button:
+		mybutton = document.getElementById("upBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		function showmodal(id){
+		  var img = document.getElementById(id);
+		  modal.style.display = "block";
+		  modalImg.src = img.src;
+		  captionText.innerHTML = img.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+	</script>
+
+</body>
+
+</html>
